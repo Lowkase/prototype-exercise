@@ -1,0 +1,21 @@
+/* -------------------------------------------------------------------------------- */
+/* MIXINS - AVATAR
+/* -------------------------------------------------------------------------------- */
+@mixin avatar($width, $height, $margin, $img-width, $img-height, $img-margin, $border, $trophy-color, $trophy-top, $trophy-left) { 
+
+	width:$width; 
+	height:$height; 
+	margin:$margin; 
+	position:relative;
+	display:block; 
+	line-height:0; 
+	
+	border:$border; 
+	border-radius:50%; 
+	cursor:pointer; 
+	
+	img 									{ width:$img-width; height:$img-height; margin:$img-margin; display:block; border-radius:50%; }
+	.fa-trophy								{ color:$trophy-color; position:absolute; top:$trophy-top; left:$trophy-left; }
+}
+
+

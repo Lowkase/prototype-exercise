@@ -1,0 +1,5 @@
+// --------------------------------------------------------------------------------
+// MODULES - PROGRESS SPRINT
+// --------------------------------------------------------------------------------
+.m-progress-sprint							{ width:100%; height:2px; position:absolute; bottom:0; opacity:0; background:$color-gray-lighter1; @include transition(opacity 3s ease-in-out, height 1s linear); }
+.m-progress-sprint-show 					{ opacity:0.8; }	

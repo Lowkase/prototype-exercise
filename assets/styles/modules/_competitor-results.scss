@@ -1,0 +1,17 @@
+// --------------------------------------------------------------------------------
+// MODULES - COMPETITOR RESULTS
+// --------------------------------------------------------------------------------
+.m-competitor-results 						{ width:100%; opacity:0; position:absolute; bottom:40%; z-index:99; text-align:center; @include transition(opacity 3s ease-in-out); 
+	.avatar 								{ @include avatar(96px, 96px, 0 auto, 100%, 100%, 0, 4px solid $color-blue-lighter, $color-blue-lighter, -5px, -5px); }
+	.name 									{ font-size:1.5em; font-weight:$font-weight-medium; text-align:center; }
+	.stats 									{ @include cf(); width:50%; margin:0 auto; opacity:1; @include transition(opacity 3s ease-in-out); }
+	.stats > div 							{ float:left; }
+
+
+	.new-personal-best 						{ color:red; }
+
+}
+.m-competitor-results-show 					{ opacity:1; }
+.m-competitor-results-absent 				{ opacity:.2; }
+
+

@@ -1,0 +1,8 @@
+// --------------------------------------------------------------------------------
+// MODULES - FLASH MESSAGE
+// --------------------------------------------------------------------------------
+.m-flash-message							{ width:100%; height:300px; margin:auto 0; opacity:0; display:block; position:absolute; top:0; right:0; bottom:0; left:0; z-index:99; color:black; text-align:center; font-size:10em; font-weight:$font-weight-ultra-bold; }
+.m-flash-message-show						{ opacity:1; }
+.m-flash-message-green 						{ color:green; }
+.m-flash-message-yellow 					{ color:yellow; }
+.m-flash-message-red 						{ color:red; }

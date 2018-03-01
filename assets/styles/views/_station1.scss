@@ -1,0 +1,91 @@
+// --------------------------------------------------------------------------------
+// VIEWS - STATION1
+// --------------------------------------------------------------------------------
+.v-station1 								{
+
+	.m-competitor 							{ margin:0 auto; position:absolute; right:0; bottom:20px; left:0; }
+	.m-competitor-move-to-top				{ bottom:75%; 
+		.stats 								{ opacity:0; }		
+	}
+	.m-competitor-hide 						{ opacity:0; bottom:75%; }
+
+
+	.m-counter 								{ margin:0 auto; position:absolute; right:0; bottom:99px; left:0; }
+
+
+	#competitor1 							{
+		.avatar 							{ border-color:$competitor1; }
+		.fa-trophy 							{ color:$competitor3; }
+	}
+	#competitor2 							{
+		.avatar 							{ border-color:$competitor2; }
+		.fa-trophy 							{ color:$competitor4; }
+	}
+	#competitor3 							{
+		.avatar 							{ border-color:$competitor3; }
+		.fa-trophy 							{ color:$competitor1; }
+	}
+	#competitor4 							{
+		.avatar 							{ border-color:$competitor4; } 
+		.fa-trophy 							{ color:$competitor2; }
+	}
+
+
+	#competitor1-perform 					{ position:absolute; right:0; bottom:76%; left:0;
+		.avatar 							{ border-color:$competitor1; }
+		.fa-trophy 							{ color:$competitor3; }
+		.personal-best-count 				{ border-color:$competitor1; }
+		.personal-best-line					{ border-color:$competitor1; }
+	}
+
+	#competitor2-perform 					{ position:absolute; right:0; bottom:72%; left:0;
+		.avatar 							{ border-color:$competitor2; }
+		.fa-trophy 							{ color:$competitor4; }
+		.personal-best-count 				{ border-color:$competitor2; }
+		.personal-best-line					{ border-color:$competitor2; }
+	}
+
+	#competitor3-perform 					{ position:absolute; right:0; bottom:94%; left:0;
+		.avatar 							{ border-color:$competitor3; }
+		.fa-trophy 							{ color:$competitor1; }
+		.personal-best-count 				{ border-color:$competitor3; }
+		.personal-best-line					{ border-color:$competitor3; }
+	}
+
+	#competitor4-perform 					{ position:absolute; right:0; bottom:60%; left:0;
+		.avatar 							{ border-color:$competitor4; }
+		.fa-trophy 							{ color:$competitor2; }
+		.personal-best-count 				{ border-color:$competitor4; }
+		.personal-best-line					{ border-color:$competitor4; }
+	}
+
+
+	#competitor1-progress					{ background:$competitor1; }
+	#competitor2-progress					{ background:$competitor2; }
+	#competitor3-progress					{ background:$competitor3; }
+	#competitor4-progress					{ background:$competitor4; }
+
+
+
+
+
+	#competitor1-results 					{
+		.avatar 							{ border-color:$competitor1; }
+		.fa-trophy 							{ color:$competitor3; }
+	}
+	#competitor2-results					{
+		.avatar 							{ border-color:$competitor2; }
+		.fa-trophy 							{ color:$competitor4; }
+	}
+	#competitor3-results 					{
+		.avatar 							{ border-color:$competitor3; }
+		.fa-trophy 							{ color:$competitor1; }
+	}
+	#competitor4-results 					{
+		.avatar 							{ border-color:$competitor4; } 
+		.fa-trophy 							{ color:$competitor2; }
+	}
+
+
+	
+}

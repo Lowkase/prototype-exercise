@@ -1,0 +1,5 @@
+// --------------------------------------------------------------------------------
+// MODULES - PROGRESS COMPETITOR
+// --------------------------------------------------------------------------------
+.m-progress-competitor						{ width:80%; height:5px; margin:0 auto; position:absolute; right:0; bottom:0; left:0; opacity:0; z-index:5; background:$color-gray-lighter1; @include transition(opacity 3s ease-in-out, height 1s linear); }
+.m-progress-competitor-show 				{ opacity:1; }	

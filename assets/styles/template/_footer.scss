@@ -1,0 +1,5 @@
+// --------------------------------------------------------------------------------
+// TEMPLATE - FOOTER 
+// --------------------------------------------------------------------------------
+.l-footer 									{ @include absolute-panel(100%, $body-width, 85px, null, null, 0, 0, $color-white-default); border-top:1px solid $color-gray-default; }
+

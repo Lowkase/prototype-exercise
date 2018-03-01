@@ -1,0 +1,24 @@
+// --------------------------------------------------------------------------------
+// MODULES - TOP BOTTOM PANEL
+// --------------------------------------------------------------------------------
+.m-top-bottom-panel							{ 
+	img 									{ width:76px; height:76px; margin:5px auto; display:block; }
+	.lft									{ @include absolute-panel(100px, null, null, 0, null, null, 0, null); }
+	.mid 									{ @include absolute-panel(null, null, null, 0, 100px, 0, 100px, null); text-align:center; line-height:80px; }	
+	.rgt									{ @include absolute-panel(100px, null, null, 0, 0, null, null, null); }
+}
+
+.m-top-panel 								{ font-size:2.750em;
+	.mid .title 							{ color:$color-blue-default; font-weight:$font-weight-bold; }
+	.mid .description 						{ color:$color-blue-lighter; font-weight:$font-weight-medium; }
+}
+
+.m-bottom-panel 							{
+	.mid .checkpoint 						{ color:$color-blue-lighter; font-size:2em; font-weight:$font-weight-medium; }
+	.mid .timer 							{ margin:0 40px; color:$color-blue-default; font-size:2.750em; font-weight:$font-weight-bold; }
+}
+
+.m-bottom-panel-countdown 					{
+	.mid .checkpoint 						{ color:$color-red-default; }
+	.mid .timer 							{ color:$color-red-default; }
+}

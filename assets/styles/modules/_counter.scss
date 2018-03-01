@@ -1,0 +1,8 @@
+// --------------------------------------------------------------------------------
+// MODULES - COUNTER
+// --------------------------------------------------------------------------------
+.m-counter 									{ width:96px; height:96px; margin:0 auto; opacity:0; display:block; line-height:0; z-index:99; background:$color-gray-lighter2; border:4px solid $color-gray-default; border-radius:50%; @include transition(opacity 3s ease-in-out);
+	.count 									{ margin-top:44px; color:$color-gray-default; font-size:2.5em; font-weight:$font-weight-bold; text-align:center; }
+}
+
+.m-counter-show 							{ opacity:1; }

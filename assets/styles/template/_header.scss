@@ -1,0 +1,4 @@
+// --------------------------------------------------------------------------------
+// TEMPLATE - HEADER 
+// --------------------------------------------------------------------------------
+.l-header 									{ @include absolute-panel(100%, $body-width, 85px, 0, null, null, 0, $color-white-default); border-bottom:1px solid $color-gray-default; }

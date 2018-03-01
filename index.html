@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title v-text="title">Undisputed Athelete - Leaderboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,100,900' rel='stylesheet' type='text/css'>
+        <link href="assets/styles/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <div class="l-header">
+            <div class="m-top-bottom-panel m-top-panel">
+                <div class="lft">
+                    <img src="assets/images/logo.png" alt="Undisputed Athletes" />
+                </div>
+                <div class="mid">
+                    <span id="header-title" class="title"></span>
+                    <span id="header-description" class="description"></span>
+                </div>
+                <div class="rgt">
+                    <img src="assets/images/logo.png" alt="Undisputed Athletes" />
+                </div>
+            </div>
+        </div>
+
+
+<!-- CLASS SCHEDULE -->
+        <div id="v-class-schedule" class="l-body" style="background:pink;">
+           CLASS SCHEDULE
+        </div>
+
+
+<!-- CLASS MATRIX -->
+        <div id="v-class-matrix" class="l-body" style="background:orange;">
+            CLASS MATRIX
+        </div>
+
+
+<!-- DUAL GENDER LEADERBOARD -->
+        <div id="v-dual-gender-leaderboard" class="l-body" style="background:pink;">
+            DUAL GENDER LEADERBOARD
+        </div>
+
+
+<!-- CLASS CHALLENGES -->
+        <div id="v-class-challenges" class="l-body" style="background:orange;">
+           CLASS CHALLENGES
+        </div>
+
+
+<!-- STATION 1 - START -->
+        <div id="v-station1" class="l-body v-station1">
+
+            <div id="station1-instructions" class="m-station-instructions">
+                <h2>PUSH UPS</h2>
+                <img src="assets/images/station1.png" alt="Push Ups" />
+                <p>Two 60 second sprints.  Do as many push ups as possible</p>
+            </div>
+
+            <div id="next-station-instructions" class="m-next-station-instructions">
+                <h2>NEXT STATION</h2>
+                <p>SKIPPING</p>
+            </div>
+
+            <div id="flash-go" class="m-flash-message m-flash-message-green">GO!</div>
+            <div id="flash-stop" class="m-flash-message m-flash-message-red">STOP!</div>
+            <div id="flash-rest" class="m-flash-message m-flash-message-yellow">REST</div>
+
+
+            <div id="flash-start-countdown" class="m-flash-message m-flash-message-red">5</div>
+
+
+            <div class="m-swimlane-station ">
+                <div class="swimlane">
+<!-- COMPETITOR 1 -->                    
+                    <div id="competitor1" class="m-competitor">
+                        <div class="avatar">
+                            <i class="fa fa-trophy fa-2x"></i>
+                            <img src="assets/images/competitor3.jpg" />
+                        </div>
+                        <div class="name">Emily</div>
+                        <div class="stats">
+                            <div class="key">PB: </div>
+                            <div class="value">81</div>
+                        </div>
+                        <div class="stats">
+                            <div class="key">Level: </div>
+                            <div class="value">103</div>
+                        </div>
+                    </div>
+                    <div id="competitor1-perform" class="m-personal-best">
+                        <div class="m-rel-con">
+                            <div class="avatar">
+                                <i class="fa fa-trophy"></i>
+                                <img src="assets/images/competitor3.jpg" />
+                            </div>
+                            <div class="personal-best-count">
+                                <div class="count">76</div>
+                            </div>
+                            <div class="personal-best-line"></div>                            
+                        </div>
+                    </div>
+                    <div class="m-counter">
+                        <div id="competitor1-count" class="count">0</div>
+                    </div>
+                    <div id="competitor1-progress" class="m-progress-competitor">
+                        <div class="m-competitor-progress-position"></div>
+                    </div>
+                    <div id="competitor1-results" class="m-competitor-results">
+                        <img src="assets/images/crown.png" />
+                        <div class="avatar">
+                            <i class="fa fa-trophy fa-2x"></i>
+                            <img src="assets/images/competitor3.jpg" />
+                        </div>
+                        <div class="name">Emily <img src="assets/images/ribbon-second.png" /></span></div>
+                        <div class="reps">REPS</div>
+                        <div class="reps-value">74 <span>TODAY</span></div>
+                        <div class="reps-personal-best">76 PB</div>
+                    </div>
+                </div>
+                <div class="swimlane">
+<!-- COMPETITOR 2 -->
+                    <div id="competitor2" class="m-competitor">
+                        <div class="avatar">
+                            <i class="fa fa-trophy fa-2x"></i>
+                            <img src="assets/images/competitor2.jpg" />
+                        </div>
+                        <div class="name">Paul</div>
+                        <div class="stats">
+                            <div class="key">PB: </div>
+                            <div class="value">76</div>
+                        </div>
+                        <div class="stats">
+                            <div class="key">Level: </div>
+                            <div class="value">99</div>
+                        </div>
+                    </div>
+                    <div id="competitor2-perform" class="m-personal-best">
+                        <div class="m-rel-con">
+                            <div class="avatar">
+                                <i class="fa fa-trophy"></i>
+                                <img src="assets/images/competitor2.jpg" />
+                            </div>
+                            <div class="personal-best-count">
+                                <div class="count">72</div>
+                            </div>
+                            <div class="personal-best-line"></div>                            
+                        </div>
+                    </div>                    
+                    <div class="m-counter">
+                        <div id="competitor2-count" class="count">0</div>
+                    </div>
+                    <div id="competitor2-progress" class="m-progress-competitor">
+                        <div class="m-competitor-progress-position"></div>
+                    </div>
+                    <div id="competitor2-results" class="m-competitor-results">
+                        <div class="avatar">
+                            <i class="fa fa-trophy fa-2x"></i>
+                            <img src="assets/images/competitor2.jpg" />
+                        </div>
+                        <div class="name">Paul <img src="assets/images/ribbon-third.png" /></span></div>
+                        <div class="reps">REPS</div>
+                        <div class="reps-value">68 <span>TODAY</span></div>
+                        <div class="reps-personal-best">72 PB</div>
+                    </div>
+                </div>
+                <div class="swimlane">
+<!-- COMPETITOR 3 -->
+                    <div id="competitor3" class="m-competitor m-competitor-absent">
+                        <div class="avatar">
+                            <i class="fa fa-trophy fa-2x"></i>
+                            <img src="assets/images/competitor4.jpg" />
+                        </div>
+                        <div class="name">Jesse</div>
+                        <div class="stats">
+                            <div class="key">PB: </div>
+                            <div class="value">72</div>
+                        </div>
+                        <div class="stats">
+                            <div class="key">Level: </div>
+                            <div class="value">95</div>
+                        </div>
+                    </div>
+                    <div id="competitor3-perform" class="m-personal-best">
+                        <div class="m-rel-con">
+                            <div class="avatar">
+                                <i class="fa fa-trophy"></i>
+                                <img src="assets/images/competitor4.jpg" />
+                            </div>
+                            <div class="personal-best-count">
+                                <div class="count">94</div>
+                            </div>
+                            <div class="personal-best-line"></div>                            
+                        </div>
+                    </div>                    
+                    <div class="m-counter">
+                        <div id="competitor3-count" class="count">0</div>
+                    </div>
+                    <div id="competitor3-progress" class="m-progress-competitor">
+                        <div class="m-competitor-progress-position"></div>
+                    </div>
+                    <div id="competitor3-results" class="m-competitor-results">
+                        <div class="avatar">
+                            <i class="fa fa-trophy fa-2x"></i>
+                            <img src="assets/images/competitor4.jpg" />
+                        </div>
+                        <div class="name">Jesse <img src="assets/images/ribbon-first.png" /></span></div>
+                        <div class="reps">REPS</div>
+                        <div class="reps-value">88 <span>TODAY</span></div>
+                        <div class="reps-personal-best">94 PB</div>
+                    </div>
+                </div>
+                <div class="swimlane">
+<!-- COMPETITOR 4 -->
+                    <div id="competitor4" class="m-competitor">
+                        <div class="avatar">
+                            <i class="fa fa-trophy fa-2x"></i>
+                            <img src="assets/images/competitor6.jpg" />
+                        </div>
+                        <div class="name">Thomas</div>
+                        <div class="stats">
+                            <div class="key">PB: </div>
+                            <div class="value">63</div>
+                        </div>
+                        <div class="stats">
+                            <div class="key">Level: </div>
+                            <div class="value">91</div>
+                        </div>
+                    </div>
+                    <div id="competitor4-perform" class="m-personal-best">
+                        <div class="m-rel-con">
+                            <div class="avatar">
+                                <i class="fa fa-trophy"></i>
+                                <img src="assets/images/competitor6.jpg" />
+                            </div>
+                            <div class="personal-best-count">
+                                <div class="count">63</div>
+                            </div>
+                            <div class="personal-best-line"></div>                            
+                        </div>
+                    </div>                    
+                    <div class="m-counter">
+                        <div id="competitor4-count" class="count">0</div>
+                    </div>
+                    <div id="competitor4-progress" class="m-progress-competitor">
+                        <div class="m-competitor-progress-position"></div>
+                    </div>
+                    <div id="competitor4-personal-best" class="m-swimlane-personal-best">NEW PB *</div>
+                    <div id="competitor4-results" class="m-competitor-results">
+                        <div class="avatar">
+                            <i class="fa fa-trophy fa-2x"></i>
+                            <img src="assets/images/competitor6.jpg" />
+                        </div>
+                        <div class="name">Thomas</span></div>
+                        <div class="reps">REPS</div>
+                        <div class="reps-value">67 <span>TODAY</span></div>
+                        <div class="reps-personal-best new-personal-best">67 PB</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-progress-sprint"></div>
+            <div class="m-leader-line"></div>
+
+        </div>
+<!-- STATION 1 - END -->
+
+
+
+        <!-- FOOTER -->
+        <div class="l-footer">
+            <div id="top-bottom-panel" class="m-top-bottom-panel m-bottom-panel">
+                <div class="lft">
+                    
+                </div>
+                <div class="mid">
+                    <span id="footer-checkpoint-left" class="checkpoint"></span>
+                    <span id="scoreboardTimer" class="timer"></span>
+                    <span id="footer-checkpoint-right" class="checkpoint"></span>
+                </div>
+                <div class="rgt">
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script src="assets/scripts/util.js"></script>
+    <script src="assets/scripts/events.js"></script>
+    <script src="assets/scripts/eventdata.js"></script>
+    <script src="assets/scripts/leaderboard.js"></script>
+    <script src="assets/scripts/station1.js"></script>
+    <script src="assets/scripts/sprint1.js"></script>
+    <script src="assets/scripts/rest1.js"></script>
+    <script src="assets/scripts/sprint2.js"></script>
+    <script src="assets/scripts/station1end.js"></script>
+
+    <script>
+        $( document ).ready(function() {
+
+            // Show the first view
+            showView( events[0][2] );
+
+            // Start heartbeat
+            heartbeat.start(function(){}, 1000);
+
+            // Pause / Play
+            $( "#test-click1" ).on( "click", function() {
+                if(heartbeat.playState==="PLAY"){
+                    console.log("Pause");
+                    heartbeat.stop();
+                } else if(heartbeat.playState==="PAUSE"){
+                    console.log("Play");
+                    heartbeat.start();
+                }
+            });
+
+            // Fast forward
+            $( "#test-click2" ).on( "click", function() {
+                if( heartbeat.timerInterval === 1000 ){ 
+                    console.log("Speed up - 500");
+                    heartbeat.set_interval(500);
+                } else if ( heartbeat.timerInterval === 500 ){
+                    console.log("Speed up - 250");
+                    heartbeat.set_interval(250);
+                } else if ( heartbeat.timerInterval === 250 ){
+                    console.log("Speed up - 100");
+                    heartbeat.set_interval(100);
+                } else if ( heartbeat.timerInterval === 100 ){
+                    console.log("Speed up - 25");
+                    heartbeat.set_interval(25);                    
+                } else if ( heartbeat.timerInterval === 25 ){
+                    console.log("Slow down - 1000");
+                    heartbeat.set_interval(1000);
+                }
+            });
+
+        });
+    </script>
+</html>

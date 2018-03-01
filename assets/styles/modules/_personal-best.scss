@@ -1,0 +1,13 @@
+// --------------------------------------------------------------------------------
+// MODULES - PERSONAL BEST
+// --------------------------------------------------------------------------------
+.m-personal-best 							{ opacity:0; @include transition(opacity 3s ease-in-out, bottom 2s linear);
+	.avatar 								{ @include avatar(48px, 48px, 0 0 0 20px, 100%, 100%, 0, 3px solid $color-blue-lighter, $color-blue-lighter, -5px, -15px); z-index:9; }
+	.personal-best-count 					{ width:36px; height:36px; margin:5px 10px 0 0; display:block; line-height:0; position:absolute; top:0; right:0; background:$color-gray-lighter2; border:3px solid $color-gray-default; border-radius:50%; z-index:9;
+		.count 								{ margin-top:15px; color:$color-gray-default; font-size:1em; font-weight:$font-weight-bold; text-align:center; }
+	}
+	.personal-best-line 					{ width:100%; height:3px; margin:auto 0; position:absolute; top:0; bottom:0; border-bottom:3px dashed $color-blue-lighter; }
+}
+
+.m-personal-best-show 						{ opacity:1; }
+.m-personal-best-reset 						{ bottom:40% !important; }

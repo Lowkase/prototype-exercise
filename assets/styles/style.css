@@ -1,0 +1,1112 @@
+/*  Syntax Quick Reference
+  --------------------------
+  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  span($ratio: 1, $offset: 0)
+  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  unshift()
+  edit()
+  center($max_width: 1410px, $pad: 0)
+  stack($pad: 0, $align: false)
+  unstack()
+  align($direction: both)
+  cf()
+*/
+/**
+ * Grid settings.
+ * All values are defaults and can therefore be easily overidden.
+ */
+/**
+ * List functions courtesy of the wonderful folks at Team Sass.
+ * Check out their awesome grid: Singularity.
+ */
+/**
+ * Get  percentage from a given ratio.
+ * @param {number} [$ratio=1] - The column ratio of the element.
+ * @returns {number} - The percentage value.
+ */
+/**
+ * Work out the column widths based on the ratio and gutter sizes.
+ * @param {number} [$ratios=1] - The column ratio of the element.
+ * @param {number} [$gutter=$jeet-gutter] - The gutter for the column.
+ * @returns {list} $width $gutter - A list containing the with and gutter for the element.
+ */
+/**
+ * Get the set layout direction for the project.
+ * @returns {string} $direction - The layout direction.
+ */
+/**
+ * Replace a specified list value with a new value (uses built in set-nth() if available)
+ * @param {list} $list - The list of values you want to alter.
+ * @param {number} $index - The index of the list item you want to replace.
+ * @param {*} $value - The value you want to replace $index with.
+ * @returns {list} $list - The list with the value replaced or removed.
+ * @warn if an invalid index is supplied.
+ */
+/**
+ * Reverse a list (progressively enhanced for Sass 3.3)
+ * @param {list} $list - The list of values you want to reverse.
+ * @returns {list} $result - The reversed list.
+ */
+/**
+ * Get the opposite direction to a given value.
+ * @param {string} $dir - The direction you want the opposite of.
+ * @returns {string} - The opposite direction to $dir.
+ * @warn if an incorrect string is provided.
+ */
+/**
+ * Style an element as a column with a gutter.
+ * @param {number} [$ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [$offset=0] - A offset specified as a fraction (see $ratios).
+ * @param {number} [$cycle=0] - Easily create an nth column grid where $cycle equals the number of columns.
+ * @param {number} [$uncycle=0] - Undo a previous cycle value to allow for a new one.
+ * @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * An alias for the column mixin.
+ * @param [$args...] - All arguments get passed through to column().
+ */
+/**
+ * Get the width of a column and nothing else.
+ * @param {number} [$ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * Get the gutter size of a column and nothing else.
+ * @param {number} [ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [gutter=jeet.gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * An alias for the column-width function.
+ * @param [$args...] - All arguments get passed through to column().
+ */
+/**
+ * An alias for the column-gutter function.
+ * @param [$args...] - All arguments get passed through to column().
+ */
+/**
+ * Style an element as a column without any gutters for a seamless row.
+ * @param {number} [$ratios=1] - A width relative to its container as a fraction.
+ * @param {number} [$offset=0] - A offset specified as a fraction (see $ratios).
+ * @param {number} [cycle=0] - Easily create an nth column grid where cycle equals the number of columns.
+ * @param {number} [uncycle=0] - Undo a previous cycle value to allow for a new one.
+ */
+/**
+ * Reorder columns without altering the HTML.
+ * @param {number} [$ratios=0] - Specify how far along you want the element to move.
+ * @param {string} [$col-or-span=column] - Specify whether the element has a gutter or not.
+ * @param {number} [$gutter=$jeet-gutter] - Specify the gutter width as a percentage of the containers width.
+ */
+/**
+ * Reset an element that has had shift() applied to it.
+ */
+/**
+ * View the grid and its layers for easy debugging.
+ * @param {string} [$color=black] - The background tint applied.
+ * @param {boolean} [$important=false] - Whether to apply the style as !important.
+ */
+/**
+ *  Alias for edit().
+ */
+/**
+ * Horizontally center an element.
+ * @param {number} [$max-width=1410px] - The max width the element can be.
+ * @param {number} [$pad=0] - Specify the element's left and right padding.
+ */
+/**
+ * Uncenter an element.
+ */
+/**
+ * Stack an element so that nothing is either side of it.
+ * @param {number} [$pad=0] - Specify the element's left and right padding.
+ * @param {boolean/string} [$align=false] - Specify the text align for the element.
+ */
+/**
+ * Unstack an element.
+ */
+/**
+ * Center an element on either or both axes.
+ * @requires A parent container with relative positioning.
+ * @param {string} [$direction=both] - Specify which axes to center the element on.
+ */
+/**
+ * Apply a clearfix to an element.
+ */
+/* -------------------------------------------------------------------------------- */
+/* MIXINS - ABSOLUTE CENTER ALL
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/* MIXINS - ABSOLUTE PANEL
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/* MIXINS - AVATAR
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/* MIXINS - BORDER-RADIUS-ALL
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/* MIXINS - BORDER-RADIUS
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/* MIXINS - TEXT-TRUNCATE
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/* BASE - ELEMENTS
+/* -------------------------------------------------------------------------------- */
+/* line 4, base/_elements.scss */
+html {
+  box-sizing: border-box;
+  font-size: 1em;
+  line-height: 1.4;
+}
+/* line 5, base/_elements.scss */
+html ::selection {
+  background: #b3d4fc;
+}
+/* line 6, base/_elements.scss */
+html ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+}
+/* line 7, base/_elements.scss */
+html ::-webkit-scrollbar-thumb {
+  background: #bcbcbc;
+}
+
+/* line 10, base/_elements.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+  outline: none;
+}
+
+/* line 12, base/_elements.scss */
+body {
+  width: 100%;
+  min-width: 1024px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #f4f4f4;
+  color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+/* line 20, base/_elements.scss */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 21, base/_elements.scss */
+button {
+  font-family: "Roboto", sans-serif;
+  border: 0;
+}
+
+/* line 22, base/_elements.scss */
+select {
+  height: 40px;
+  background: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 0.875em;
+  border: 0;
+}
+
+/* line 23, base/_elements.scss */
+input[type=text] {
+  width: 100%;
+  height: 40px;
+  padding: 0 5px;
+  background: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 0.875em;
+}
+
+/* line 26, base/_elements.scss */
+h2 {
+  margin: 0;
+  color: #3f5465;
+  font-size: 2.750em;
+  font-weight: 700;
+}
+
+/* line 27, base/_elements.scss */
+p {
+  margin: 0;
+  color: #64849f;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+/* line 28, base/_elements.scss */
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+/* line 4, modules/_competitor.scss */
+.m-competitor {
+  -webkit-transition: bottom 3s ease-in-out, opacity 3s ease-in-out;
+  -moz-transition: bottom 3s ease-in-out, opacity 3s ease-in-out;
+  transition: bottom 3s ease-in-out, opacity 3s ease-in-out;
+}
+/* line 5, modules/_competitor.scss */
+.m-competitor .avatar {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  line-height: 0;
+  border: 4px solid #64849f;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* line 17, mixins/_avatar.scss */
+.m-competitor .avatar img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: block;
+  border-radius: 50%;
+}
+/* line 18, mixins/_avatar.scss */
+.m-competitor .avatar .fa-trophy {
+  color: #64849f;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+/* line 6, modules/_competitor.scss */
+.m-competitor .name {
+  font-size: 1.5em;
+  font-weight: 500;
+  text-align: center;
+}
+/* line 7, modules/_competitor.scss */
+.m-competitor .stats {
+  *zoom: 1;
+  width: 50%;
+  margin: 0 auto;
+  opacity: 1;
+  -webkit-transition: opacity 3s ease-in-out;
+  -moz-transition: opacity 3s ease-in-out;
+  transition: opacity 3s ease-in-out;
+}
+/* line 344, libs/jeet/_grid.scss */
+.m-competitor .stats:before, .m-competitor .stats:after {
+  content: '';
+  display: table;
+}
+/* line 349, libs/jeet/_grid.scss */
+.m-competitor .stats:after {
+  clear: both;
+}
+/* line 8, modules/_competitor.scss */
+.m-competitor .stats > div {
+  float: left;
+}
+
+/* line 11, modules/_competitor.scss */
+.m-competitor-absent {
+  opacity: .2;
+}
+
+/* line 5, modules/_competitor-progress-position.scss */
+.m-competitor-progress-position {
+  width: 100%;
+  margin: 10px 0 0 10px;
+  display: block;
+  opacity: 0;
+  color: white;
+  font-size: 1em;
+  font-weight: 900;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+/* line 6, modules/_competitor-progress-position.scss */
+.m-competitor-progress-position-show {
+  opacity: 1;
+}
+
+/* line 4, modules/_competitor-results.scss */
+.m-competitor-results {
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  bottom: 40%;
+  z-index: 99;
+  text-align: center;
+  -webkit-transition: opacity 3s ease-in-out;
+  -moz-transition: opacity 3s ease-in-out;
+  transition: opacity 3s ease-in-out;
+}
+/* line 5, modules/_competitor-results.scss */
+.m-competitor-results .avatar {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  line-height: 0;
+  border: 4px solid #64849f;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* line 17, mixins/_avatar.scss */
+.m-competitor-results .avatar img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: block;
+  border-radius: 50%;
+}
+/* line 18, mixins/_avatar.scss */
+.m-competitor-results .avatar .fa-trophy {
+  color: #64849f;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+/* line 6, modules/_competitor-results.scss */
+.m-competitor-results .name {
+  font-size: 1.5em;
+  font-weight: 500;
+  text-align: center;
+}
+/* line 7, modules/_competitor-results.scss */
+.m-competitor-results .stats {
+  *zoom: 1;
+  width: 50%;
+  margin: 0 auto;
+  opacity: 1;
+  -webkit-transition: opacity 3s ease-in-out;
+  -moz-transition: opacity 3s ease-in-out;
+  transition: opacity 3s ease-in-out;
+}
+/* line 344, libs/jeet/_grid.scss */
+.m-competitor-results .stats:before, .m-competitor-results .stats:after {
+  content: '';
+  display: table;
+}
+/* line 349, libs/jeet/_grid.scss */
+.m-competitor-results .stats:after {
+  clear: both;
+}
+/* line 8, modules/_competitor-results.scss */
+.m-competitor-results .stats > div {
+  float: left;
+}
+/* line 11, modules/_competitor-results.scss */
+.m-competitor-results .new-personal-best {
+  color: red;
+}
+
+/* line 14, modules/_competitor-results.scss */
+.m-competitor-results-show {
+  opacity: 1;
+}
+
+/* line 15, modules/_competitor-results.scss */
+.m-competitor-results-absent {
+  opacity: .2;
+}
+
+/* line 4, modules/_counter.scss */
+.m-counter {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto;
+  opacity: 0;
+  display: block;
+  line-height: 0;
+  z-index: 99;
+  background: #e6e6e6;
+  border: 4px solid #333333;
+  border-radius: 50%;
+  -webkit-transition: opacity 3s ease-in-out;
+  -moz-transition: opacity 3s ease-in-out;
+  transition: opacity 3s ease-in-out;
+}
+/* line 5, modules/_counter.scss */
+.m-counter .count {
+  margin-top: 44px;
+  color: #333333;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* line 8, modules/_counter.scss */
+.m-counter-show {
+  opacity: 1;
+}
+
+/* line 4, modules/_flash-message.scss */
+.m-flash-message {
+  width: 100%;
+  height: 300px;
+  margin: auto 0;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  color: black;
+  text-align: center;
+  font-size: 10em;
+  font-weight: 900;
+}
+
+/* line 5, modules/_flash-message.scss */
+.m-flash-message-show {
+  opacity: 1;
+}
+
+/* line 6, modules/_flash-message.scss */
+.m-flash-message-green {
+  color: green;
+}
+
+/* line 7, modules/_flash-message.scss */
+.m-flash-message-yellow {
+  color: yellow;
+}
+
+/* line 8, modules/_flash-message.scss */
+.m-flash-message-red {
+  color: red;
+}
+
+/* line 5, modules/_leader-line.scss */
+.m-leader-line {
+  width: 100%;
+  height: 6px;
+  display: block;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transition;
+  border-top: 2px solid red;
+  -webkit-transition: opacity 1s ease-in-out, height 1s linear;
+  -moz-transition: opacity 1s ease-in-out, height 1s linear;
+  transition: opacity 1s ease-in-out, height 1s linear;
+}
+
+/* line 6, modules/_leader-line.scss */
+.m-leader-line-show {
+  opacity: 1;
+}
+
+/* line 4, modules/_next-station-instructions.scss */
+.m-next-station-instructions {
+  width: 60%;
+  height: 200px;
+  margin: 0 auto;
+  padding: 20px;
+  position: absolute;
+  top: -200px;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  background: #fff;
+  border-right: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+  border-left: 2px solid #333333;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  -webkit-transition: top 2s ease-in-out;
+  -moz-transition: top 2s ease-in-out;
+  transition: top 2s ease-in-out;
+}
+/* line 9, modules/_next-station-instructions.scss */
+.m-next-station-instructions.m-next-show-station-instruction {
+  top: 0px;
+}
+/* line 11, modules/_next-station-instructions.scss */
+.m-next-station-instructions h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* line 12, modules/_next-station-instructions.scss */
+.m-next-station-instructions p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 3em;
+}
+
+/* line 4, modules/_personal-best.scss */
+.m-personal-best {
+  opacity: 0;
+  -webkit-transition: opacity 3s ease-in-out, bottom 2s linear;
+  -moz-transition: opacity 3s ease-in-out, bottom 2s linear;
+  transition: opacity 3s ease-in-out, bottom 2s linear;
+}
+/* line 5, modules/_personal-best.scss */
+.m-personal-best .avatar {
+  width: 48px;
+  height: 48px;
+  margin: 0 0 0 20px;
+  position: relative;
+  display: block;
+  line-height: 0;
+  border: 3px solid #64849f;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9;
+}
+/* line 17, mixins/_avatar.scss */
+.m-personal-best .avatar img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: block;
+  border-radius: 50%;
+}
+/* line 18, mixins/_avatar.scss */
+.m-personal-best .avatar .fa-trophy {
+  color: #64849f;
+  position: absolute;
+  top: -5px;
+  left: -15px;
+}
+/* line 6, modules/_personal-best.scss */
+.m-personal-best .personal-best-count {
+  width: 36px;
+  height: 36px;
+  margin: 5px 10px 0 0;
+  display: block;
+  line-height: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #e6e6e6;
+  border: 3px solid #333333;
+  border-radius: 50%;
+  z-index: 9;
+}
+/* line 7, modules/_personal-best.scss */
+.m-personal-best .personal-best-count .count {
+  margin-top: 15px;
+  color: #333333;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+}
+/* line 9, modules/_personal-best.scss */
+.m-personal-best .personal-best-line {
+  width: 100%;
+  height: 3px;
+  margin: auto 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-bottom: 3px dashed #64849f;
+}
+
+/* line 12, modules/_personal-best.scss */
+.m-personal-best-show {
+  opacity: 1;
+}
+
+/* line 13, modules/_personal-best.scss */
+.m-personal-best-reset {
+  bottom: 40% !important;
+}
+
+/* line 4, modules/_progress-competitor.scss */
+.m-progress-competitor {
+  width: 80%;
+  height: 5px;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 5;
+  background: #bcbcbc;
+  -webkit-transition: opacity 3s ease-in-out, height 1s linear;
+  -moz-transition: opacity 3s ease-in-out, height 1s linear;
+  transition: opacity 3s ease-in-out, height 1s linear;
+}
+
+/* line 5, modules/_progress-competitor.scss */
+.m-progress-competitor-show {
+  opacity: 1;
+}
+
+/* line 4, modules/_progress-sprint.scss */
+.m-progress-sprint {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  background: #bcbcbc;
+  -webkit-transition: opacity 3s ease-in-out, height 1s linear;
+  -moz-transition: opacity 3s ease-in-out, height 1s linear;
+  transition: opacity 3s ease-in-out, height 1s linear;
+}
+
+/* line 5, modules/_progress-sprint.scss */
+.m-progress-sprint-show {
+  opacity: 0.8;
+}
+
+/* line 4, modules/_station-instructions.scss */
+.m-station-instructions {
+  width: 60%;
+  height: 360px;
+  margin: 0 auto;
+  padding: 20px;
+  position: absolute;
+  top: -360px;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  background: #fff;
+  border-right: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+  border-left: 2px solid #333333;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  -webkit-transition: top 2s ease-in-out;
+  -moz-transition: top 2s ease-in-out;
+  transition: top 2s ease-in-out;
+}
+/* line 9, modules/_station-instructions.scss */
+.m-station-instructions.show-station-instruction {
+  top: 0px;
+}
+/* line 11, modules/_station-instructions.scss */
+.m-station-instructions h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* line 12, modules/_station-instructions.scss */
+.m-station-instructions img {
+  height: 160px;
+  margin: 0 auto;
+  display: block;
+}
+/* line 13, modules/_station-instructions.scss */
+.m-station-instructions p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* line 5, modules/_swimlane-personal-best.scss */
+.m-swimlane-personal-best {
+  width: 100%;
+  padding-right: 40px;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  bottom: 63%;
+  left: 0;
+  z-index: 99;
+  color: green;
+  text-align: right;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+/* line 6, modules/_swimlane-personal-best.scss */
+.m-swimlane-personal-best-show {
+  opacity: 1;
+}
+
+/* line 4, modules/_swimlane-station.scss */
+.m-swimlane-station {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* line 5, modules/_swimlane-station.scss */
+.m-swimlane-station .swimlane:nth-child(1) {
+  position: absolute;
+  top: 0;
+  right: 75%;
+  bottom: 0;
+  left: 0;
+}
+/* line 6, modules/_swimlane-station.scss */
+.m-swimlane-station .swimlane:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  bottom: 0;
+  left: 25%;
+}
+/* line 7, modules/_swimlane-station.scss */
+.m-swimlane-station .swimlane:nth-child(3) {
+  position: absolute;
+  top: 0;
+  right: 25%;
+  bottom: 0;
+  left: 50%;
+}
+/* line 8, modules/_swimlane-station.scss */
+.m-swimlane-station .swimlane:nth-child(4) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 75%;
+}
+/* line 9, modules/_swimlane-station.scss */
+.m-swimlane-station .swimlane:nth-child(odd) {
+  background: #e6e6e6;
+}
+/* line 11, modules/_swimlane-station.scss */
+.m-swimlane-station .swimlane {
+  border-right: 1px solid #bcbcbc;
+}
+/* line 12, modules/_swimlane-station.scss */
+.m-swimlane-station .swimlane:last-child {
+  border: 0;
+}
+
+/* line 5, modules/_top-bottom-panel.scss */
+.m-top-bottom-panel img {
+  width: 76px;
+  height: 76px;
+  margin: 5px auto;
+  display: block;
+}
+/* line 6, modules/_top-bottom-panel.scss */
+.m-top-bottom-panel .lft {
+  position: absolute;
+  width: 100px;
+  top: 0;
+  left: 0;
+}
+/* line 7, modules/_top-bottom-panel.scss */
+.m-top-bottom-panel .mid {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  bottom: 0;
+  left: 100px;
+  text-align: center;
+  line-height: 80px;
+}
+/* line 8, modules/_top-bottom-panel.scss */
+.m-top-bottom-panel .rgt {
+  position: absolute;
+  width: 100px;
+  top: 0;
+  right: 0;
+}
+
+/* line 11, modules/_top-bottom-panel.scss */
+.m-top-panel {
+  font-size: 2.750em;
+}
+/* line 12, modules/_top-bottom-panel.scss */
+.m-top-panel .mid .title {
+  color: #3f5465;
+  font-weight: 700;
+}
+/* line 13, modules/_top-bottom-panel.scss */
+.m-top-panel .mid .description {
+  color: #64849f;
+  font-weight: 500;
+}
+
+/* line 17, modules/_top-bottom-panel.scss */
+.m-bottom-panel .mid .checkpoint {
+  color: #64849f;
+  font-size: 2em;
+  font-weight: 500;
+}
+/* line 18, modules/_top-bottom-panel.scss */
+.m-bottom-panel .mid .timer {
+  margin: 0 40px;
+  color: #3f5465;
+  font-size: 2.750em;
+  font-weight: 700;
+}
+
+/* line 22, modules/_top-bottom-panel.scss */
+.m-bottom-panel-countdown .mid .checkpoint {
+  color: #c62e2e;
+}
+/* line 23, modules/_top-bottom-panel.scss */
+.m-bottom-panel-countdown .mid .timer {
+  color: #c62e2e;
+}
+
+/* line 4, modules/_temp.scss */
+.m-rel-con {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  *zoom: 1;
+}
+/* line 344, libs/jeet/_grid.scss */
+.m-rel-con:before, .m-rel-con:after {
+  content: '';
+  display: table;
+}
+/* line 349, libs/jeet/_grid.scss */
+.m-rel-con:after {
+  clear: both;
+}
+
+/* line 4, template/_header.scss */
+.l-header {
+  position: absolute;
+  width: 100%;
+  min-width: 1024px;
+  height: 85px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  border-bottom: 1px solid #333333;
+}
+
+/* line 4, template/_body.scss */
+.l-body {
+  position: absolute;
+  width: 100%;
+  min-width: 1024px;
+  top: 85px;
+  bottom: 85px;
+  left: 0;
+  background: #fff;
+  display: none;
+  -webkit-transition: top 1s ease-in-out;
+  -moz-transition: top 1s ease-in-out;
+  transition: top 1s ease-in-out;
+}
+/* line 5, template/_body.scss */
+.l-body.extend-top {
+  top: 0px;
+}
+
+/* line 4, template/_footer.scss */
+.l-footer {
+  position: absolute;
+  width: 100%;
+  min-width: 1024px;
+  height: 85px;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  border-top: 1px solid #333333;
+}
+
+/* line 6, views/_station1.scss */
+.v-station1 .m-competitor {
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  left: 0;
+}
+/* line 7, views/_station1.scss */
+.v-station1 .m-competitor-move-to-top {
+  bottom: 75%;
+}
+/* line 8, views/_station1.scss */
+.v-station1 .m-competitor-move-to-top .stats {
+  opacity: 0;
+}
+/* line 10, views/_station1.scss */
+.v-station1 .m-competitor-hide {
+  opacity: 0;
+  bottom: 75%;
+}
+/* line 13, views/_station1.scss */
+.v-station1 .m-counter {
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  bottom: 99px;
+  left: 0;
+}
+/* line 17, views/_station1.scss */
+.v-station1 #competitor1 .avatar {
+  border-color: #eb588b;
+}
+/* line 18, views/_station1.scss */
+.v-station1 #competitor1 .fa-trophy {
+  color: #a5c428;
+}
+/* line 21, views/_station1.scss */
+.v-station1 #competitor2 .avatar {
+  border-color: #f29100;
+}
+/* line 22, views/_station1.scss */
+.v-station1 #competitor2 .fa-trophy {
+  color: #3dc0e9;
+}
+/* line 25, views/_station1.scss */
+.v-station1 #competitor3 .avatar {
+  border-color: #a5c428;
+}
+/* line 26, views/_station1.scss */
+.v-station1 #competitor3 .fa-trophy {
+  color: #eb588b;
+}
+/* line 29, views/_station1.scss */
+.v-station1 #competitor4 .avatar {
+  border-color: #3dc0e9;
+}
+/* line 30, views/_station1.scss */
+.v-station1 #competitor4 .fa-trophy {
+  color: #f29100;
+}
+/* line 34, views/_station1.scss */
+.v-station1 #competitor1-perform {
+  position: absolute;
+  right: 0;
+  bottom: 76%;
+  left: 0;
+}
+/* line 35, views/_station1.scss */
+.v-station1 #competitor1-perform .avatar {
+  border-color: #eb588b;
+}
+/* line 36, views/_station1.scss */
+.v-station1 #competitor1-perform .fa-trophy {
+  color: #a5c428;
+}
+/* line 37, views/_station1.scss */
+.v-station1 #competitor1-perform .personal-best-count {
+  border-color: #eb588b;
+}
+/* line 38, views/_station1.scss */
+.v-station1 #competitor1-perform .personal-best-line {
+  border-color: #eb588b;
+}
+/* line 41, views/_station1.scss */
+.v-station1 #competitor2-perform {
+  position: absolute;
+  right: 0;
+  bottom: 72%;
+  left: 0;
+}
+/* line 42, views/_station1.scss */
+.v-station1 #competitor2-perform .avatar {
+  border-color: #f29100;
+}
+/* line 43, views/_station1.scss */
+.v-station1 #competitor2-perform .fa-trophy {
+  color: #3dc0e9;
+}
+/* line 44, views/_station1.scss */
+.v-station1 #competitor2-perform .personal-best-count {
+  border-color: #f29100;
+}
+/* line 45, views/_station1.scss */
+.v-station1 #competitor2-perform .personal-best-line {
+  border-color: #f29100;
+}
+/* line 48, views/_station1.scss */
+.v-station1 #competitor3-perform {
+  position: absolute;
+  right: 0;
+  bottom: 94%;
+  left: 0;
+}
+/* line 49, views/_station1.scss */
+.v-station1 #competitor3-perform .avatar {
+  border-color: #a5c428;
+}
+/* line 50, views/_station1.scss */
+.v-station1 #competitor3-perform .fa-trophy {
+  color: #eb588b;
+}
+/* line 51, views/_station1.scss */
+.v-station1 #competitor3-perform .personal-best-count {
+  border-color: #a5c428;
+}
+/* line 52, views/_station1.scss */
+.v-station1 #competitor3-perform .personal-best-line {
+  border-color: #a5c428;
+}
+/* line 55, views/_station1.scss */
+.v-station1 #competitor4-perform {
+  position: absolute;
+  right: 0;
+  bottom: 60%;
+  left: 0;
+}
+/* line 56, views/_station1.scss */
+.v-station1 #competitor4-perform .avatar {
+  border-color: #3dc0e9;
+}
+/* line 57, views/_station1.scss */
+.v-station1 #competitor4-perform .fa-trophy {
+  color: #f29100;
+}
+/* line 58, views/_station1.scss */
+.v-station1 #competitor4-perform .personal-best-count {
+  border-color: #3dc0e9;
+}
+/* line 59, views/_station1.scss */
+.v-station1 #competitor4-perform .personal-best-line {
+  border-color: #3dc0e9;
+}
+/* line 63, views/_station1.scss */
+.v-station1 #competitor1-progress {
+  background: #eb588b;
+}
+/* line 64, views/_station1.scss */
+.v-station1 #competitor2-progress {
+  background: #f29100;
+}
+/* line 65, views/_station1.scss */
+.v-station1 #competitor3-progress {
+  background: #a5c428;
+}
+/* line 66, views/_station1.scss */
+.v-station1 #competitor4-progress {
+  background: #3dc0e9;
+}
+/* line 73, views/_station1.scss */
+.v-station1 #competitor1-results .avatar {
+  border-color: #eb588b;
+}
+/* line 74, views/_station1.scss */
+.v-station1 #competitor1-results .fa-trophy {
+  color: #a5c428;
+}
+/* line 77, views/_station1.scss */
+.v-station1 #competitor2-results .avatar {
+  border-color: #f29100;
+}
+/* line 78, views/_station1.scss */
+.v-station1 #competitor2-results .fa-trophy {
+  color: #3dc0e9;
+}
+/* line 81, views/_station1.scss */
+.v-station1 #competitor3-results .avatar {
+  border-color: #a5c428;
+}
+/* line 82, views/_station1.scss */
+.v-station1 #competitor3-results .fa-trophy {
+  color: #eb588b;
+}
+/* line 85, views/_station1.scss */
+.v-station1 #competitor4-results .avatar {
+  border-color: #3dc0e9;
+}
+/* line 86, views/_station1.scss */
+.v-station1 #competitor4-results .fa-trophy {
+  color: #f29100;
+}

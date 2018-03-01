@@ -1,0 +1,13 @@
+// --------------------------------------------------------------------------------
+// MODULES - STATION INSTRUCTIONS
+// --------------------------------------------------------------------------------
+.m-next-station-instructions 				{ width:60%; height:200px; margin:0 auto; padding:20px; position:absolute; top:-200px; right:0; left:0; z-index:99;
+											  background:$color-white-default; 
+											  border-right:2px solid $color-gray-default; border-bottom:2px solid $color-gray-default; border-left:2px solid $color-gray-default;  
+											  @include border-radius(7px, bottom-left); @include border-radius(7px, bottom-right);
+									  		  @include transition(top 2s ease-in-out);
+	&.m-next-show-station-instruction		{ top:0px; }
+
+	h2 										{ margin-bottom:20px; text-align:center; }
+	p 										{ margin-top:20px; text-align:center; font-size:3em; }
+}

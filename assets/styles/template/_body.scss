@@ -1,0 +1,6 @@
+// --------------------------------------------------------------------------------
+// TEMPLATE - BODY 
+// --------------------------------------------------------------------------------
+.l-body										{ @include absolute-panel(100%, $body-width, null, 85px, null, 85px, 0, $color-white-default); display:none; @include transition(top 1s ease-in-out);
+	&.extend-top 							{ top:0px; }
+}

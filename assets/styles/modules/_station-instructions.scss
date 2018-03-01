@@ -1,0 +1,15 @@
+// --------------------------------------------------------------------------------
+// MODULES - STATION INSTRUCTIONS
+// --------------------------------------------------------------------------------
+.m-station-instructions 					{ width:60%; height:360px; margin:0 auto; padding:20px; position:absolute; top:-360px; right:0; left:0; z-index:99;
+											  background:$color-white-default; 
+											  border-right:2px solid $color-gray-default; border-bottom:2px solid $color-gray-default; border-left:2px solid $color-gray-default;  
+											  @include border-radius(7px, bottom-left); @include border-radius(7px, bottom-right);
+									  		  @include transition(top 2s ease-in-out);
+	&.show-station-instruction				{ top:0px; }
+
+	h2 										{ margin-bottom:20px; text-align:center; }
+	img 									{ height:160px; margin:0 auto; display:block; }
+	p 										{ margin-top:20px; text-align:center; }
+
+}

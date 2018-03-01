@@ -1,0 +1,13 @@
+// --------------------------------------------------------------------------------
+// MODULES - SWIMLANE STATION
+// --------------------------------------------------------------------------------
+.m-swimlane-station 						{ width:100%; height:100%; position:relative;
+	.swimlane:nth-child(1)					{ position:absolute; top:0; right:75%; bottom:0; left:0; }
+	.swimlane:nth-child(2)					{ position:absolute; top:0; right:50%; bottom:0; left:25%; }
+	.swimlane:nth-child(3)					{ position:absolute; top:0; right:25%; bottom:0; left:50%; }
+	.swimlane:nth-child(4)					{ position:absolute; top:0; right:0;   bottom:0; left:75%; }
+	.swimlane:nth-child(odd) 				{ background:$color-gray-lighter2; }
+
+	.swimlane 								{ border-right:1px solid $color-gray-lighter1; }
+	.swimlane:last-child 					{ border:0; }
+}
